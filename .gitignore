@@ -84,7 +84,7 @@ celerybeat-schedule
 # Environments
 .env
 .venv
-env/
+env/git
 venv/
 ENV/
 env.bak/
@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#custom
+.idea/
+references/
+.scratch_pad.py
