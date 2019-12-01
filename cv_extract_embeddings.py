@@ -6,7 +6,7 @@ import pickle
 import cv2
 import os
 
-dataset = "dataset/"
+dataset = "dataset/train"
 embeddings = "output/embeddings.pickle"
 detector_path = "face_detection_model"
 detector_model = "res10_300x300_ssd_iter_140000.caffemodel"

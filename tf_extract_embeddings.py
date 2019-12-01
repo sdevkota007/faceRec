@@ -5,7 +5,7 @@ import pickle
 import cv2
 import os
 
-dataset = "dataset/"
+dataset = "dataset/train/"
 embeddings = "output/embeddings.pickle"
 detector_path = "face_detection_model"
 detector_model = 'frozen_inference_graph.pb'
@@ -49,6 +49,7 @@ with tf.Session() as sess:
                                                      len(imagePaths)))
         name = imagePath.split(os.path.sep)[-2]
 
+        print(imagePath)
         img = cv2.imread(imagePath)
         rows = img.shape[0]
         cols = img.shape[1]

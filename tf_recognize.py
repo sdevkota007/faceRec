@@ -8,7 +8,7 @@ import cv2
 import os
 
 
-image_path = "images/test-1.jpg"
+image_path = "images/adele-3.jpg"
 
 detector_path = "face_detection_model/"
 detector_model = "frozen_inference_graph.pb"
@@ -103,7 +103,7 @@ with tf.Session() as sess:
             cv2.rectangle(img, (int(x), int(y)), (int(right), int(bottom)), (125, 255, 51), thickness=2)
 
             cv2.putText(img, text, (int(x), int(y)),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 0, 255), 2)
 
     # show the output image
     cv2.imshow("Image", img)

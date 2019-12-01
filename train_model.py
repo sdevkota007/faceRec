@@ -21,7 +21,7 @@ labels = le.fit_transform(data["names"])
 # train the model used to accept the 128-d embeddings of the face and
 # then produce the actual face recognition
 print("[INFO] training model...")
-svm_model = SVC(C=1.0, kernel="linear", probability=True)
+svm_model = SVC(probability=True)
 svm_model.fit(data["embeddings"], labels)
 
 # write the actual face recognition model to disk
