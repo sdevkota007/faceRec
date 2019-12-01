@@ -5,7 +5,8 @@ SSD Inception v2 for face detection, and FaceNet for feature extraction. Further
 on the extracted features for face recognition. The FaceNet model was obtained from the OpenFace project, a python
 and torch implementation of face with deep learning. 
 
-Requirements:
+#### Requirements: 
+The SSD Inception v2 model may not load on a CPU only system. Use of a powerful enough GPU is suggested. 
  - Tensorflow-gpu 1.15
  - OpenCV 4.1.1
  - imutils
